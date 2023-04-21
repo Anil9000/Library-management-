@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Library Management Page</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Library Management Page</h1>
+	<div>
+		<label for="search-title">Search by Title:</label>
+		<input type="text" id="search-title">
+		<label for="search-author">Search by Author:</label>
+		<input type="text" id="search-author">
+		<label for="search-subject">Search by Subject:</label>
+		<input type="text" id="search-subject">
+		<label for="search-publish-date">Search by Publish Date:</label>
+		<input type="date" id="search-publish-date">
+		<button onclick="filterBooks()">Filter</button>
+		<button onclick="resetFilters()">Reset</button>
+		<p>Number of books:</p>
+		<ul>
+			<li>Title: <span id="count-title"></span></li>
+			<li>Author: <span id="count-author"></span></li>
+			<li>Subject: <span id="count-subject"></span></li>
+			<li>Publish Date: <span id="count-publish-date"></span></li>
+		</ul>
+	</div>
+	<table>
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>Author</th>
+				<th>Subject</th>
+				<th>Publish Date</th>
+			</tr>
+		</thead>
+		<tbody id="book-list">
+			<!-- book list will be loaded dynamically using JavaScript -->
+		</tbody>
+	</table>
+	<div id="pagination">
+		<!-- pagination will be loaded dynamically using JavaScript -->
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
